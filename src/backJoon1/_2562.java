@@ -12,7 +12,7 @@ public class _2562 {
 		
 		int count = 0;
 		int max = 0;
-		int index = 0;
+		int index = 0; 
 		for(int value : num) {
 			count++;
 			if(value > max) {
