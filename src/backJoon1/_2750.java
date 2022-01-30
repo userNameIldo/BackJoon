@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class _2750 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		Scanner sc = new Scanner(System.in);
 		
 		int count = sc.nextInt();
@@ -13,15 +13,15 @@ public class _2750 {
 		
 		int cnum;
 		
-		for(int i = 0; i <= count-1; i++) {
+		for(int i = 0; i < count; i++) {
 			
 			num[i] = sc.nextInt();		
 			
 		}
 		
-		for(int j = 0; j<= count-1; j++) {
+		for(int j = 0; j< count; j++) {
 			
-			for(int k = j; k<= count-1; k++) {
+			for(int k = j; k< count; k++) {
 				
 				if(num[j] > num[k]) {
 					cnum = num[j];
@@ -31,11 +31,7 @@ public class _2750 {
 				
 			}
 			
-		}
-		
-		for(int i = 0; i <= count-1; i++) {
-			
-			System.out.println(num[i]);		
+			System.out.println(num[j]);		
 			
 		}
 
