@@ -22,8 +22,7 @@ public class _2562 {
 			
 		}
 		System.out.println(max + "\n" + index);
-		
-		
+			
 	}
 
 }
