@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -19,7 +20,7 @@ public class _1764 {
 		int N = Integer.parseInt(st.nextToken());
 		int M = Integer.parseInt(st.nextToken());
 	
-		ArrayList<String> arr1 = new ArrayList<>();
+		HashSet<String> arr1 = new HashSet<>();
 		ArrayList<String> result = new ArrayList<>();
 		for(int i = 0; i < N; i++) {
 			arr1.add(br.readLine());
@@ -35,6 +36,7 @@ public class _1764 {
 		Collections.sort(result);
 		
 		System.out.println(result.size());
+		
 		for(String str : result) {
 			System.out.println(str);
 		}
