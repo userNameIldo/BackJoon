@@ -20,6 +20,7 @@ public class _10845 {
 		
 		Queue<Integer> q = new LinkedList<>();
 		
+		int back = 0;
 		
 		for(int i = 0; i < N; i++) {
 			
@@ -28,8 +29,36 @@ public class _10845 {
 			switch(st.nextToken()) {
 				
 			case "push":
-				q.add(st.nextToken());
-			
+				back = Integer.parseInt(st.nextToken());
+				q.add(back);
+				break;
+			case "pop":
+				if(q.isEmpty()) 
+					System.out.println(-1);
+				else
+					System.out.println(q.poll());
+				break;
+			case "size":
+				System.out.println(q.size());
+				break;
+			case "empty":
+				if(q.isEmpty())
+					System.out.println(1);
+				else
+					System.out.println(0);
+				break;
+			case "front":
+				if(q.size()==0)
+					System.out.println(-1);
+				else
+					System.out.println(q.peek());
+				break;
+			case "back":
+				if(q.size()==0)
+					System.out.println(-1);
+				else
+					System.out.println(back);
+				break;
 			}
 			
 			
